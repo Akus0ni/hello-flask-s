@@ -13,7 +13,7 @@ def home():
 
 @app.route("/hello/<name>")
 def hello_there(name):
-    now = datetime.now()
+    now = datetime.now(tz=ZoneInfo('Asia/Kolkata'))
     # formatted_now = now.strftime("%A, %d %B, %Y")
     formatted_now = now.strftime("%A, %d %B, %Y as %X")
 
